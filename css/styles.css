@@ -44,7 +44,7 @@ img {
 
 /* ------------------------HEADER----------------------- */
 .border-header {
-   border-bottom: 1px solid #E7E9FC;
+   border-bottom: 1px solid var(--accent);
    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
@@ -97,7 +97,7 @@ img {
    height: 4px;
    left: 0px;
    bottom: -4px;
-   background-color: #404BBF;
+   background-color: var(--color-hover);
    border-radius: 2px;
 }
 .header-link:is( :hover, :focus){
@@ -472,7 +472,7 @@ main {
    letter-spacing: 0.04em;
    color: var(--color-logo);
    background: var(--background-team);
-   border: 1px solid #E7E9FC;
+   border: 1px solid var(--accent);
    cursor: pointer;
    padding: 12px 24px 12px 24px;
    border-radius: 4px;
@@ -517,16 +517,16 @@ main {
    font-size: 16px;
    line-height: 24px;
    letter-spacing: 0.02em;
-   color: #F4F4FD;
+   color: var(--background-team);
    padding: 40px 32px;
-   background-color: #4D5AE5;
+   background-color: var(--color-logo);
    transform: translateY(100%);
    transition-property: transform;
    transition-duration: 250ms;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
  .border-portfolio {
-   border: 1px solid #E7E9FC;
+   border: 1px solid var(--accent);
    border-top: none;
    padding: 32px 16px;
 }
@@ -564,7 +564,7 @@ main {
    left: 50%;
    top: 50%;
    transform: translate(-50%, -50%) scaleY(1);
-   background: #FCFCFC;
+   background: var(--modal-background);
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 4px;
    padding: 24px;
@@ -572,7 +572,7 @@ main {
 .modal-icon-btn {
    width: 24px;
    height: 24px;
-   background: #E7E9FC;
+   background-color: var(--accent);
    border: 1px solid rgba(0, 0, 0, 0.1);
    border-radius: 50%;
    display: block;
@@ -581,7 +581,7 @@ main {
 .modal-icon-close {
    width: 8px;
    height: 8px;
-   color: #2E2F42;
+   color: var(--color-link);
 }
 .is-hidden {
    opacity: 0;
