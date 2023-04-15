@@ -385,10 +385,13 @@
                          </svg>
                     </div>
                 </div>
-                <label for="user-text" class="modal-label">Comment
-                    <textarea name="user-text" id="user-text" class="modal-text" placeholder="Text input"></textarea></label> 
-                <input type="checkbox" name="policy" id="policy" value="">
-                <label for="policy" class="modal-checkbox">I accept the terms and conditions of the <span><a href="" class="modal-link">Privacy Policy</a></span>.</label>
+                <div class="checkbox-wrap">
+                    <label for="user-text" class="modal-label">Comment
+                        <textarea name="user-text" id="user-text" class="modal-text" placeholder="Text input"></textarea></label> 
+                    <input type="checkbox" name="policy" id="policy" value="tru" class="modal-click">
+                    <label for="policy" class="modal-checkbox">I accept the terms and conditions of the <span><a href="" class="modal-link">Privacy Policy</a></span>.</label>
+                </div>
+                
                 <button type="submit" class="modal-btn">Send</button>
             </form>
         </div>
@@ -396,3 +399,4 @@
     <script src="./js/modal.js"></script>
 </body>
 </html>
+

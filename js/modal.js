@@ -12,4 +12,7 @@
       refs.modal.classList.toggle("is-hidden");
       document.body.classList.toggle('no-scroll');
     }
+    refs.modal.addEventListener("click", click => {
+      if(click.target === click.currentTarget) toggleModal();
+});
   })();

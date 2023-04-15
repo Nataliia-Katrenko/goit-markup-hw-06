@@ -703,6 +703,10 @@ main {
    width: 18px;
    height: 24px;
 }
+.checkbox-wrap {
+   margin-top: 16px;
+   margin-bottom: 24px;
+}
 .modal-text {
    width: 360px;
    height: 120px;
@@ -723,6 +727,25 @@ main {
    line-height: 1.17px;
    letter-spacing: 0.04em;
    color: var(--subtle-text);
+   display: flex;
+   align-items: center;
+}
+.modal-checkbox::before {
+   content: '';
+   width: 16px;
+   height: 16px;
+   border: 1px solid rgba(46, 47, 66, 0.4);
+   border-radius: 2px; 
+   margin-right: 8px;
+}
+.modal-click:checked + .modal-checkbox::before {
+   width: 16px;
+   height: 16px;
+   background: #404BBF;
+   border: 1px solid #404BBF;
+   border-radius: 2px;
+   border: none;
+   background-image: url(../images/icons.svg.svg#icon-check);
 }
 .modal-link {
    font-weight: 400;
