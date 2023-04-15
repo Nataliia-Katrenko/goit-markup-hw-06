@@ -39,7 +39,7 @@
             </section>
             <section class="about list">
                 <div class="container">
-                    <h2 class="about-title">title</h2>
+                    <h2 class="visually-hidden">title</h2>
                     <ul class="about-items list">
                         <li class="about-list">
                             <div class="about-list-icon">
@@ -385,13 +385,17 @@
                          </svg>
                     </div>
                 </div>
+                <label for="user-text" class="modal-label">Comment
+                    <textarea name="user-text" id="user-text" class="modal-text" placeholder="Text input"></textarea></label> 
                 <div class="checkbox-wrap">
-                    <label for="user-text" class="modal-label">Comment
-                        <textarea name="user-text" id="user-text" class="modal-text" placeholder="Text input"></textarea></label> 
-                    <input type="checkbox" name="policy" id="policy" value="tru" class="modal-click">
-                    <label for="policy" class="modal-checkbox">I accept the terms and conditions of the <span><a href="" class="modal-link">Privacy Policy</a></span>.</label>
+                    <input type="checkbox" name="policy" id="policy" value="true" class="modal-click visually-hidden">
+                    
+                    <label for="policy" class="modal-checkbox">
+                       <svg class="icon-check">
+                            <use href="./images/icons.svg.svg#icon-check"></use>
+                        </svg>I accept the terms and conditions of the<a href="" class="modal-link">Privacy Policy</a>
+                    </label>
                 </div>
-                
                 <button type="submit" class="modal-btn">Send</button>
             </form>
         </div>
